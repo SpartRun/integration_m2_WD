@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Peek</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/normalize.css">
+
+</head>
+  <body>
+    <header>
+      <nav>
+         <div class="logo-li">
+           <img id="logo"src="img/logo.svg" alt="Peek"/>
+           <div class="header_burger">
+          <span></span>
+        </div>
+           <div class="menu-li">
+
+           <a href="//github.io/jo_geek" target="_blank">Github</a>
+           <a href="" target="_blank">Matchs en direct</a>
+           <a href="" target="_blank">Actualités</a>
+           <a href="" target="_blank">Statistiques</a>
+           <a href="" target="_blank">Tournoi NFT</a>
+           <a href="" target="_blank">Promotions</a>
+           <a style="margin-right:0; margin-left:300px;" href="" target="_blank">Darkmode</a>
+           <div class="box">
+
+             <input id="checkbox" type="checkbox"/>
+             <label for="checkbox"></label>
+           </div>
+         </div>
+         </div>
+      </nav>
+    </header>
+    <section>
+      <h1> Retour de la lfl <br> en direct NIce </h1>
+      <img src="img/img1.jpg" alt="lfl nice" id="slider">
+      <ul class="img-nav">
+        <li><img onclick="imgSlider('img/img1.jpg')" src="img/img11.jpg" alt=""></li>
+        <li><img onclick="imgSlider('img/img2.jpg')" src="img/img2.jpg" alt=""></li>
+        <li><img onclick="imgSlider('img/img3.jpg')" src="img/img3.jpg" alt=""></li>
+
+      </ul>
+    </section>
+    <div class="part2">
+      <div class="left">
+    <h2>Rejoignez l'E-sport<h2>
+      <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+    </div>
+    <div class="right">
+      <div>
+  <div class="carousel">
+    <ul class="slides">
+      <input type="radio" name="radio-buttons" id="img-1" checked />
+      <li class="slide-container">
+        <div class="slide-image">
+          <img src="img/esport.jpg">
+        </div>
+        <div class="carousel-controls">
+          <label for="img-3" class="prev-slide">
+            <span>&lsaquo;</span>
+          </label>
+          <label for="img-2" class="next-slide">
+            <span>&rsaquo;</span>
+          </label>
+        </div>
+      </li>
+      <input type="radio" name="radio-buttons" id="img-2" />
+      <li class="slide-container">
+        <div class="slide-image">
+          <img src="img/img1.jpg">
+        </div>
+        <div class="carousel-controls">
+          <label for="img-1" class="prev-slide">
+            <span>&lsaquo;</span>
+          </label>
+          <label for="img-3" class="next-slide">
+            <span>&rsaquo;</span>
+          </label>
+        </div>
+      </li>
+      <input type="radio" name="radio-buttons" id="img-3" />
+      <li class="slide-container">
+        <div class="slide-image">
+          <img src="img/img2.jpg">
+        </div>
+        <div class="carousel-controls">
+          <label for="img-2" class="prev-slide">
+            <span>&lsaquo;</span>
+          </label>
+          <label for="img-1" class="next-slide">
+            <span>&rsaquo;</span>
+          </label>
+        </div>
+      </li>
+      <div class="carousel-dots">
+        <label for="img-1" class="carousel-dot" id="img-dot-1"></label>
+        <label for="img-2" class="carousel-dot" id="img-dot-2"></label>
+        <label for="img-3" class="carousel-dot" id="img-dot-3"></label>
+      </div>
+    </ul>
+  </div>
+</div>
+    </div>
+    </div>
+    <div class="part3">
+      <div id="calendar">
+        <select name="mois" id="mois">
+          <option value="janvier">Janvier</option>
+          <option value="fevrier">Février</option>
+          <option value="mars">Mars</option>
+          <option value="avril">Avril</option>
+        </select>
+          <table>
+          <tr><td class="lastmonth">30</td><td>1</td><td>2</td><td>3</td><td class="hastask">4</td><td>5</td><td>6</td></tr>
+          <tr><td>7</td><td class="current">8</td><td class="hastask">9</td><td>10</td><td>11</td><td class="hastask">12</td><td>13</td></tr>
+          <tr><td>14</td><td class="hastask">15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td></tr>
+          <tr><td class="hastask">21</td><td>22</td><td>23</td><td>24</td><td>25</td><td class="hastask">26</td><td>27</td></tr>
+          <tr><td>28</td><td>29</td><td class="hastask">30</td><td>31</td><td class="nextmonth">1</td><td>2</td><td>3</td></tr>
+        </table>
+
+</div>
+<div class="event_text">
+<h2>Evenements à venir<h2>
+  <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+</div>
+    </div>
+  <footer>
+    <ul>
+      <li>Aide</li>
+      <li>Plan du site</li>
+      <li>Mentions légales</li>
+      <li>Conditions générales</li>
+    </ul>
+  </footer>
+    <script>
+    function imgSlider(img){
+      document.getElementById("slider").src = img;
+    }
+    $(document).ready(function() {
+	$('.header_burger').click(function(event) {
+		$('.header_burger,.header_menu').toggleClass('active');
+		$('body').toggleClass('lock');
+	});
+});
+    </script>
+  </body>
+</html>
